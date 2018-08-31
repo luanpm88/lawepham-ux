@@ -6,5 +6,12 @@
             "name": "Luan Pham",
             "email": "luanpm88@gmail.com"
         }
-    ]
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lawepham\\Ux\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
 }
