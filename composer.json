@@ -1,0 +1,12 @@
+{
+    "name": "lawepham/ux",
+    "description": "Ux for apps",
+    "authors": [
+        {
+            "name": "Luan Pham",
+            "email": "luanpm88@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
