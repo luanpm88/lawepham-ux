@@ -159,10 +159,6 @@ label {
   font-weight: 600;
 }
 
-#navbarsExampleDefault ul.navbar-nav.mr-auto li a.nav-link {
-  padding: 20px 24px;
-}
-
 .dropdown-item.active, .dropdown-item:active {
   background-color: #bfe1f5;
   color: #222;

@@ -29,7 +29,7 @@
                     {% endif %}
                     {% if sort %}
                         <label class="text-small text-semibold text-dim text-normal font-size">Sort by</label>
-                        {% include ux('helpers/form_controls/_dataselect.twig') with {
+                        {% include 'helper::form_controls/_dataselect.twig' with {
                             name: sort['name'],
                             value: sort['value'],
                             options: sort['options']
@@ -41,7 +41,7 @@
                     <!--begin filter group-->
                     {% if filters %}
                         {% for filter in filters %}
-                            {% include ux("helpers/form_controls/_#{filter['type']}.twig") with filter %}
+                            {% include "helper::form_controls/_#{filter['type']}.twig" with filter %}
                         {% endfor %}    
                     {% endif %}
                     <!--end filter group-->

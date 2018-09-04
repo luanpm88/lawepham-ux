@@ -33,41 +33,6 @@ class TwigUx extends Twig_Extension
      */
     public function getFunctions()
     {
-        return [
-            new Twig_SimpleFunction(
-                'ux',
-                function ($path) {
-                    return 'ux/templates/' . $path;
-                }
-            ),
-            new Twig_SimpleFunction(
-                'format_date_time',
-                function ($datetime) {
-                    return DateTime::formatDateTime($datetime);
-                }
-            ),
-            new Twig_SimpleFunction(
-                'format_date',
-                function ($datetime) {
-                    return DateTime::formatDate($datetime);
-                }
-            ),
-            new Twig_SimpleFunction(
-                'format_time',
-                function ($datetime) {
-                    return DateTime::formatTime($datetime);
-                }
-            ),
-            new Twig_SimpleFunction(
-                'auth_customer',
-                function () {
-                    if (\Auth::check() && \Auth::user()->customer) {
-                        return \Auth::user()->customer;
-                    } else {
-                        return null;
-                    }
-                }
-            ),
-        ];
+        return [];
     }
 }

@@ -1,5 +1,4 @@
-    {% for row in rows %}
-         
+{% for row in rows %}
     <div class="content-profile">
         <div class="container">
             <div class="row">
@@ -10,7 +9,7 @@
                     <div class="anh-profile">
                         <span class="lnr lnr-user icon-contact-show"></span>
                         {% if image %}
-                            {% include ux('helpers/_datalist_image.twig') with {
+                            {% include 'helper::_datalist_image.twig' with {
                                 image: image['url']
                             } %}
                         {% endif %}
@@ -31,4 +30,4 @@
             </div>
         </div>
     </div>
-     {% endfor %}
+{% endfor %}

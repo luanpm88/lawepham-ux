@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% block css %}
-        {% include ux('layouts/_css') %}
+        {% include 'layout::_css' %}
     {% endblock %}
 
     <script>
@@ -67,17 +67,17 @@
                 <li class="nav-item dropdown text-small text-semibold{% if 'automations' in page %} active{% endif %} ">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="media media-small inline-block mr-10">
-                            <img src="http://i.pravatar.cc/300?v={{ auth_user().id }}" />
+                            <img src="http://i.pravatar.cc/300?v={{ random(50) }}" />
                         </span>
-                        {{ auth_customer().displayName() }}
+                        LawePham
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-feestyle" aria-labelledby="dropdown01">
                         <div class="dropdown-item" style="padding-top: 24px;">
                             <span class="media media-normal inline-block mr-10 mb-lvl3">
-                                <img src="http://i.pravatar.cc/300?v={{ auth_user().id }}" />
+                                <img src="http://i.pravatar.cc/300?v={{ random(50) }}" />
                             </span>
                             <div class="mb-lvl1">
-                                {{ auth_customer().displayName() }}
+                                LawePham
                             </div>
                             <div class="progress height-lvl1">
                                 <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -122,7 +122,7 @@
                 </div>
             {% endif %}
 
-            {% include ux('layouts/_page_alerts') %}
+            {% include 'layout::_page_alerts' %}
 
             {% if block('sidebar') %}
                 <div class="row">
@@ -141,8 +141,8 @@
     </div><!-- /.container -->
 
     {% block js %}
-        {% include ux('layouts/_js') %}
-        {% include ux('layouts/_page_notifies') %}
+        {% include 'layout::_js' %}
+        {% include 'layout::_page_notifies' %}
     {% endblock %}
   </body>
 </html>

@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-md-6 label">
                     {% if checkbox %}
-                        {% include ux('helpers/_datalist_row_checkbox.twig') with {
+                        {% include 'helper::_datalist_row_checkbox.twig' with {
                             id: checkbox['id']
                         } %}
                     {% endif %}
                     {% if image['url'] is not null %}
-                        {% include ux('helpers/_datalist_image.twig') with {
+                        {% include 'helper::_datalist_image.twig' with {
                             image: image['url']
                         } %}
                     {% else  %}
@@ -52,7 +52,7 @@
                         <div class="dropdown-menu dropdown-menu-right font-size" aria-labelledby="btnGroupDrop1">
                             {% for action in group_actions['more_actions'] %}
                                 {% if action['can'] %}
-                                    {% include ux('helpers/_link.twig') with action|merge({
+                                    {% include 'helper::_link.twig' with action|merge({
                                         class: "dropdown-item datalist-row-action-#{action['type']}"
                                     }) %}
                                 {% endif %}

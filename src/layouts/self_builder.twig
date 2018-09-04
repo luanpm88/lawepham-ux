@@ -4,7 +4,7 @@
         <title>{% block title %}{% endblock %} - Acelle Funnel</title>
 
         {% block css %}
-            {% include ux('layouts/_css') %}
+            {% include 'layout::_css' %}
             
             <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
             <link rel="stylesheet" href="{{ asset('assets/css/rangeslider.css') }}">
@@ -165,8 +165,8 @@
         </div>
 
         {% block js %}
-            {% include ux('layouts/_js') %}
-            {% include ux('layouts/_page_notifies') %}
+            {% include 'layout::_js' %}
+            {% include 'layout::_page_notifies' %}
             
             <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
             <script src="{{ asset('assets/js/rangeslider.js') }}"></script> 

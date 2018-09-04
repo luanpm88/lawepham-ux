@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% block css %}
-        {% include ux('layouts/_css') %}
+        {% include 'layout::_css' %}
     {% endblock %}
 
     <script>
@@ -157,15 +157,15 @@
                 </div>
             {% endif %}
 
-            {% include ux('layouts/_page_alerts') %}
+            {% include 'layout::_page_alerts' %}
             {% block content %}{% endblock %}
         </div>
 
     </div><!-- /.container -->
 
     {% block js %}
-        {% include ux('layouts/_js') %}
-        {% include ux('layouts/_page_notifies') %}
+        {% include 'layout::_js' %}
+        {% include 'layout::_page_notifies' %}
     {% endblock %}
   </body>
 </html>
