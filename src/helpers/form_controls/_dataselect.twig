@@ -1,7 +1,7 @@
 <div class="dataselect">
     <input type="hidden" name="{{ name }}" value="" />
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default dropdown-toggle selected-holder" data-toggle="dropdown">
+        <button type="button" class="btn btn-default font-size dropdown-toggle selected-holder" data-toggle="dropdown">
         </button>
         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="btnGroupDrop1">
             {% if blank %}
@@ -14,7 +14,7 @@
                 </a>
             {% endif %}
             {% for option in options %}
-                <a class="dropdown-item dataselect-item{{ (value == option['value']) ? ' selected' : '' }} {% if option['icon'] %} has-icon{% endif %}"
+                <a class="dropdown-item font-size dataselect-item{{ (value == option['value']) ? ' selected' : '' }} {% if option['icon'] %} has-icon{% endif %}"
                     href="javascript:void(0)"
                     data-value="{{ option['value'] }}"
                     data-text="{{ option['text'] }}"

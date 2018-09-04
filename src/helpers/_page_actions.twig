@@ -1,9 +1,11 @@
 {% if actions %}
     <span class="filter-item ml-lvl2">
         {% for action in actions %}
-            <a href="{{ action['url'] }}" class="btn btn-secondary btn-icon-left">
-                {{ action['text']|raw }}
-            </a>
+            {% if action['can'] is not defined or action['can'] == true %}
+                <a href="{{ action['url'] }}" class="btn btn-secondary btn-icon-left">
+                    {{ action['text']|raw }}
+                </a>
+            {% endif %}
         {% endfor %}
     </span>
 {% endif %}

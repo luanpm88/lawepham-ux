@@ -259,9 +259,97 @@ $(function() {
     };
 
     $.fn.extend({ serializeHash: serializeHash });
-
 });
 
 $( window ).resize(function() {
   $( ".page-dark-bg" ).css( "min-height", $(window).height()-60 );
 });
+
+//sort+upload+remove
+$( document ).ready(function() {
+    $('.nutchon').click(function() {
+        console.log('ban da click');
+    $('input[name=uploadfile]').click();
+    });
+});
+
+//ckeckbox-all
+$(document).on('click', '#check_all', function() {
+    $("input:checkbox").not(this).prop('checked', this.checked);
+    $("input:checked").not(this).each(function(e, value){
+        console.log(this.value);
+    });
+  });
+// xem image truoc khi upload
+function img_pathUrl(input) {
+    $('#img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+    }
+
+//delete_all checkbox
+$(document).ready(function(){
+	jQuery('.delete_all').on('click', function() { 
+		var allVals = [];  
+		$(".checkall:checked").each(function() {  
+			allVals.push($(this).attr('data-id'));
+		});
+		if (allVals.length <=0)  
+		{  
+			alert("Please select row.");  
+		}  
+		else {  
+			WRN_PROFILE_DELETE = "Are you sure you want to delete this row?";  
+			var check = confirm(WRN_PROFILE_DELETE);  
+			if (check == true) {  
+			  $.each(allVals, function( index, value ) {
+				  $('table tr').filter("[data-row-id='" + value + "']").remove();
+			  });
+			}  
+		}  
+	});
+});
+
+//Sidebar menu
+$(document).ready(function(){
+    $('.menu-bien').click(function(){
+        $('.bien').toggleClass('hien');
+    });
+});
+
+$(document).ready(function(){
+    //ham xu ly click nut chon anh
+    $('.btn-anh').click(function(){
+        $('.inp-anh').trigger('click');
+    });
+    
+    $('.ion-android-add-circle').click(function(){
+        console.log('hien chua');
+        $('ul.list_item_group_2').toggleClass('display');
+        return false;
+    });
+    
+    $(document).on('click',".btn-anh-remove" ,function() {
+        if(confirm("Bạn Có Muốn Xóa ?"))
+        {
+            $(this).parent("input#img_file").fadeOut();
+            //$(this).closest("input" ).fadeOut();
+            $("#img_file").val(null); //xóa tên của file trong input
+        }
+        else
+        return false;
+    });
+    
+    ////ham xu ly nut menu-contact
+    //$('.an').click(function(){
+    //   $('.sidebar').addClass('hien-sidebar');
+    //   $('.sidebar').removeClass('lnr lnr-cross');
+    //});
+    $('.btn-remove').click(function(){
+        console.log('haha');
+        $('.image-upload').attr("data-content","").popover('hide');
+        $('#img_url').val("");
+        $('.inp-anh input:file').val("");
+    });
+});
+ function img_pathUrl(input){
+        $('#img_url')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+    }

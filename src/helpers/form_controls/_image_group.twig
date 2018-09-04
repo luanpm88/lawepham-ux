@@ -1,0 +1,16 @@
+<!-- image-upload-filename input [CUT FROM HERE]-->
+<div class="input-group image-upload">
+    <div class="row">
+        <div class="col-sm-2 hinh_left">
+            <span class="lnr lnr-user"></span>
+            <img src="/images/customer_groups/thumbs/{{ customer_group.image }}" alt="" class="anh" style="" id="img_url">      
+        </div>
+        <div class="col-sm-10 hinh_right">
+            <p class="noidung1 font-size">Photo should be at 300px x 300px </p>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="file" name="uploadfile" class="Chon" style="display: none;" id="img_file" onChange="img_pathUrl(this);">
+            <span class="btn btn-secondary-1 nutchon font-size"><i class="lnr lnr-upload"></i> {{ trans('messages.admin.upload') }}</span>
+            <span class="btn btn-secondary-2 font-size"><i class="lnr lnr-trash"></i> {{ trans('messages.admin.remove') }}</span>
+        </div>
+    </div>    
+</div><!-- /input-group image-upload [TO HERE]-->

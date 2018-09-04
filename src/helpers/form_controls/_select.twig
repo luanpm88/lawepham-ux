@@ -1,5 +1,8 @@
 <select name="{{ name }}" class="form-control" id="exampleFormControlSelect1">
-    {% for option in options %}
-        <option{{ (value == option['value']) ? ' selected' : '' }} value="{{ option['value'] }}">{{ option['text'] }}</option>
-    {% endfor %}
+    {% if include_blank %}
+        <option value= "{{ option['value'] }}" >{{ include_blank }}</option>
+        {% for option in options %}
+            <option{{ (value == option['value']) ? ' selected' : '' }} value="{{ option['value'] }}">{{ option['text'] }}</option>
+        {% endfor %}
+    {% endif %}
 </select>

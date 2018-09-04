@@ -1,0 +1,20 @@
+<div class="input-group image-upload">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="anh-contact">
+                <span class="lnr lnr-user icon-contact"></span>
+                <img src="/images/contacts/thumbs/{{contact.image }}" alt="" id="img_url" class=""/>
+               
+            </div>
+        </div>
+        <div class="col-md-8">
+             <div class="hinh_right">
+                <p class="noidung">Photo should be as 300px x 300px</p>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                <input type="file"  name="image" class="inp-anh" style="display: none;" id="img_url" onChange="img_pathUrl(this)">
+                <span class="btn btn-outline-secondary btn-anh"><i class="lnr lnr-upload"></i>{{ trans('messages.contact.upload') }}</span>
+                <span class="btn btn-outline-secondary btn-remove"><i class="lnr lnr-trash"></i>{{ trans('messages.contact.remove') }}</span>
+            </div>
+        </div>
+    </div>
+</div>

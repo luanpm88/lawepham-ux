@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% block css %}
-        {% include 'layout::_css' %}
+        {% include ux('layouts/_css') %}
     {% endblock %}
 
     <script>
@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand text-semibold text-italic logo-link" href="{{ route('home') }}">
-            <img class="logo-img" src="{{ url('ux/assets/image/funnel-logo.png') }}"
+            <img class="logo-img" src="{{ url('/assets/image/funnel-logo.png') }}"
             <!--Acelle-UX-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
                     <a class="nav-link" href="{{ action('FunnelController@index') }}">{{ trans('messages.funnels') }}</a>
                 </li>
                 <li class="nav-item text-small text-semibold active">
-                    <a class="nav-link" href="{{ action('FunnelController@index') }}">{{ trans('messages.contacts') }}</a>
+                    <a class="nav-link" href="{{ action('ContactController@index',funnel.uid) }}">{{ trans('messages.contacts') }}</a>
                 </li>
                 <li class="nav-item text-small text-semibold active">
                     <a class="nav-link" href="{{ action('FunnelController@index') }}">{{ trans('messages.templates') }}</a>
@@ -117,12 +117,12 @@
         <div class="content">
             {% if block('page_header') %}
                 <div class="page-header flex">
-                    <h1 class="text-semibold mr-auto">{% block page_header %}{% endblock %}</h1>
+                    <h1 class="text-semibold float-left mr-auto">{% block page_header %}{% endblock %}</h1>
                     {% block page_actions %}{% endblock %}
                 </div>
             {% endif %}
 
-            {% include 'layout::_page_alerts' %}
+            {% include ux('layouts/_page_alerts') %}
 
             {% if block('sidebar') %}
                 <div class="row">
@@ -141,8 +141,8 @@
     </div><!-- /.container -->
 
     {% block js %}
-        {% include 'layout::_js' %}
-        {% include 'layout::_page_notifies' %}
+        {% include ux('layouts/_js') %}
+        {% include ux('layouts/_page_notifies') %}
     {% endblock %}
   </body>
 </html>

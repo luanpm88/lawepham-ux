@@ -5,10 +5,10 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% block css %}
-        {% include 'layout::_css' %}
+        {% include ux('layouts/_css') %}
     {% endblock %}
 
     <script>
@@ -19,118 +19,121 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand text-semibold text-italic logo-link" href="{{ route('admin.home') }}">
-            <img class="logo-img" src="{{ url('ux/assets/image/funnel-logo.png') }}"
+            <img class="logo-img" src="{{ url('/assets/image/funnel-logo.png') }}"
             <!--Acelle-UX-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon font-size"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item text-small text-semibold">
-                    <a class="nav-link" href="{{ route('admin.home') }}">Home</a>
+                    <a class="nav-link font-size" href="{{ route('admin.home') }}">Home</a>
                 </li>
                 <li class="nav-item text-small dropdown text-semibold">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-size" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Customer
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Customers
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerGroupController@index') }}">
                           Groups
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('AccountController@profile') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('AccountController@profile') }}">
                           Subscriptions
                         </a>
                     </div>
                 </li>
                 <li class="nav-item text-small dropdown text-semibold">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-size " href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plan
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size " href="{{ action('Admin\\CustomerController@index') }}">
                           Plan
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size " href="{{ action('Admin\\CustomerController@index') }}">
                           Currencies
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Payment Gateways
                         </a>
                     </div>
                 </li>
                 <li class="nav-item text-small dropdown text-semibold">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-size" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Admin
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\AdminController@index') }}">
                           Admins
                         </a>
+                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\AdminGroupController@index') }}">
+                          Groups
+                        </a>
                         <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
-                          Groups & Permissions
+                          Permissions
                         </a>
                     </div>
                 </li>
                 <li class="nav-item text-small dropdown text-semibold">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-size " href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Settings
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           All Settings
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\TemplateController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\TemplateController@index') }}">
                           Template Gallery
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Languages
                         </a>
                     </div>
                 </li>
                 <li class="nav-item text-small dropdown text-semibold">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-size nav-log" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Logs & Report
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Customer Activities
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Funnel Logs
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           System Logs
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Page Open Logs
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Link Click Logs
                         </a>
                     </div>
                 </li>
             </ul>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav icon-email">
                 <li class="nav-item dropdown text-small text-semibold{% if 'automations' in page %} active{% endif %} ">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="media media-small inline-block mr-10">
+                    <a class="nav-link dropdown-toggle icon-email" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="media media-small inline-block mr-10 icon">
                             <img src="http://i.pravatar.cc/300?v={{ auth_user().id }}" />
                         </span>
-                        {{ auth_user().email }}
+                        <span class="emai" > {{ auth_user().email }} </span>
                     </a>
-                    <div class="dropdown-menu has-border dropdown-menu-right" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold" href="{{ action('HomeController@index') }}">
+                    <div class="dropdown-menu has-border font-size dropdown-menu-right" aria-labelledby="dropdown01">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('HomeController@index') }}">
                           Frontend
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ action('AccountController@profile') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('AccountController@profile') }}">
                           Account Details
                         </a>
-                        <a class="dropdown-item text-semibold" href="{{ route('logout') }}" link-method="POST">
+                        <a class="dropdown-item text-semibold font-size" href="{{ route('logout') }}" link-method="POST">
                             Logout
                         </a>
                     </div>
@@ -146,23 +149,23 @@
             </div>
         {% endif %}
 
-        <div class="content">
+        <div class="content font-size">
             {% if block('page_header') %}
-                <div class="page-header flex">
-                    <h1 class="text-semibold mr-auto">{% block page_header %}{% endblock %}</h1>
+                <div class="page-header font-size flex">
+                    <h1 class="text-semibold mr-auto ">{% block page_header %}{% endblock %}</h1>
                     {% block page_actions %}{% endblock %}
                 </div>
             {% endif %}
 
-            {% include 'layout::_page_alerts' %}
+            {% include ux('layouts/_page_alerts') %}
             {% block content %}{% endblock %}
         </div>
 
     </div><!-- /.container -->
 
     {% block js %}
-        {% include 'layout::_js' %}
-        {% include 'layout::_page_notifies' %}
+        {% include ux('layouts/_js') %}
+        {% include ux('layouts/_page_notifies') %}
     {% endblock %}
   </body>
 </html>

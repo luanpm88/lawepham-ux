@@ -1,0 +1,34 @@
+    {% for row in rows %}
+         
+    <div class="content-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 float-right trai">
+                    <div class="contact-title">
+                        <h2 class="contact-name">{{ name['text'] }}</h2>
+                    </div>
+                    <div class="anh-profile">
+                        <span class="lnr lnr-user icon-contact-show"></span>
+                        {% if image %}
+                            {% include ux('helpers/_datalist_image.twig') with {
+                                image: image['url']
+                            } %}
+                        {% endif %}
+                    </div>
+                    <div class="thongtin">
+                        {% for name_col in name_cols %}
+                            <span class="email-title">{{ name_col['desc'] }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-md-6 float-left phai">
+                    <div class="giatri">
+                        {% for col in cols %}
+                            <span class="email-profile">{{ col['text'] }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     {% endfor %}

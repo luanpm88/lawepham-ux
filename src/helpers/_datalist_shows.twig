@@ -9,7 +9,7 @@
 {% else %}
     <ul>
         {% for row in rows %}
-            {% include ux('helpers/_datalist_row.twig') with row %}
+            {% include ux('helpers/_datalist_show.twig') with row %}
         {% endfor %}
     </ul>
 {% endif %}

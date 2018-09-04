@@ -13,12 +13,12 @@
                     {% endif %}
                     {% if actions %}
                         <div class="actions-box btn-group mr-10" role="group" style="display: none">
-                            <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-default font-size dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Action
                             </button>
                             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                 {% for action in actions %}
-                                    <a class="dropdown-item datalist-action datalist-list-action-{{ action['type'] }}" href="{{ action['url'] }}"
+                                    <a class="dropdown-item datalist-action datalist-list-action-{{ action['type'] }} font-size" href="{{ action['url'] }}"
                                         {% if action['method'] %} data-method="{{ action['method'] }}"{% endif %}
                                         {% if action['confirm'] %} data-confirm="{{ action['confirm'] }}"{% endif %}
                                         {% if action['confirm_url'] %} data-confirm-url="{{ action['confirm_url'] }}"{% endif %}
@@ -28,34 +28,30 @@
                         </div>
                     {% endif %}
                     {% if sort %}
-                        <label class="text-small text-semibold text-dim text-normal">Sort by</label>
-                        {% include 'helper::form_controls/_dataselect.twig' with {
+                        <label class="text-small text-semibold text-dim text-normal font-size">Sort by</label>
+                        {% include ux('helpers/form_controls/_dataselect.twig') with {
                             name: sort['name'],
                             value: sort['value'],
                             options: sort['options']
                         } %}
                         <input name="sort_direction" value="asc" type="hidden" />
-                        <button class="btn btn-default ml-10 sort-direction-but"><i class="ion-chevron-up"></i></button>
+                        <button class="btn btn-default font-size ml-10 sort-direction-but"><i class="ion-chevron-up font-size"></i></button> 
                     {% endif %}
+                    
+                    <!--begin filter group-->
                     {% if filters %}
-                        <span class="filter-item ml-lvl2">
-                            {% for filter in filters %}
-                                <label class="text-small text-semibold">{{ filter['label'] }}</label>
-                                {% include "helper::form_controls/_#{filter['type']}.twig" with {
-                                    name: filter['name'],
-                                    value: filter['value'],
-                                    options: filter['options']
-                                } %}
-                            {% endfor %}
-                        </span>
+                        {% for filter in filters %}
+                            {% include ux("helpers/form_controls/_#{filter['type']}.twig") with filter %}
+                        {% endfor %}    
                     {% endif %}
+                    <!--end filter group-->
                 </div>
                 <div class="filter-right">
                     {% if keyword %}
                         <span class="keyword-box">
                             <input
                                 placeholder="{{ keyword['placeholder'] }}"\
-                                class="form-control keyword-input"
+                                class="form-control keyword-input font-size"
                                 name="{{ keyword['name'] ? keyword['name'] : 'keyword' }}"
                             />
                         </span>
@@ -65,6 +61,6 @@
         </div>
     {% endif %}
     <div class="datalist-container">
-
+        <!--include _datalist_rows-->
     </div>
 </div>

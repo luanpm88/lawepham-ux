@@ -14,7 +14,7 @@
             <hr>
             <div class="gallery-item-actions mt-lvl2 text-center">
                 {% for action in actions %}
-                    {% include 'helper::_link.twig' with action|merge({
+                    {% include ux('helpers/_link.twig') with action|merge({
                         class: "btn btn-small btn-secondary datalist-row-action-#{action['type']}"
                     }) %}
                 {% endfor %}
