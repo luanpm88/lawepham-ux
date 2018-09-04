@@ -3383,3 +3383,505 @@ span.icon-contact-show {
     top: 30%;
     left: 31%;
 }
+
+
+/*code css moi*/
+.container-left{
+  margin-left: 0;
+}
+.nav-item label.text-small{
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.nav-item button.btn-default{
+  margin-left: 10px;
+  margin-top: -6px;
+}
+.ml-auto .keyword-box input.keyword-input{
+  font-size: 14px;
+  border-radius: .25rem;
+  font-weight: 500;
+}
+.text-left .btn-secondary-1{
+  background-color: #737373;
+  border-color: #737373;
+}
+.text-left .btn-secondary-1 a{
+  color: #FFF;
+}
+.row .ben_trai{
+  top: 50px;
+}
+.dataselect .btn-group button.btn-default{
+  margin-top: -5px;
+  margin-left: 2px;
+  font-size: 14px;
+}
+.filter-right span.keyword-box{
+  margin-top: -7px;
+}
+.nav-tabs a{
+  color: #637282;
+}
+.nav-tabs .nav-item .actions-box button.btn-default{
+  margin-top: -3px;
+}
+.datalist ul > li:first-child {
+  border-top: none;
+}
+.nav-tabs a.nav-item.nav-link{
+  height: 13px;
+  border: none;
+  margin-top: -5px;
+  margin-bottom: 21px;
+  padding-left: 0;
+  padding-right: 30px;
+}
+.row .text-right .text-right{
+  margin-right: 30px;
+  width: 142px;
+}
+.row .text-right .text-right i{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: blue;
+}
+.row .menu-left{
+  background: #F7F9FA;
+}
+.row .list-left .row{
+  margin-left: -7px;
+}
+/*begin list*/
+.general{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: 40px;
+  margin-left: 9px;
+  
+}
+.general-page{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: 19px;
+  margin-left: 9px;
+  padding-left: 10px;
+}
+.prences .select-garenal-1{
+  width: 20%;
+  float: right;
+  margin-top: -47px;
+  margin-right: 265px
+}
+.prences .select-garenal-1 .form-group .control-container select.form-control{
+  border-radius: 4px;
+  color: #3d464d;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: inherit;
+  padding-left: 15px;
+}
+.prences .select-garenal-1 .form-group .control-container select.form-control:hover{
+  color: #007af5;
+  border-color: #007af5;
+}
+.prences .select-garenal-1 .form-group .control-container .form-control option{
+  color: #000;
+  background-color: #FFF;
+}
+.prences .select-garenal-2{
+  width: 20%;
+  float: right;
+  margin-top: -47px;
+  margin-right: -450px;
+}
+.prences .select-garenal-2 .form-group .control-container select.form-control{
+  border-radius: 4px;
+  color: #3d464d;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: inherit;
+  text-overflow: ellipsis;
+  padding-left: 15px;
+}
+.prences .select-garenal-2 .form-group .control-container select.form-control:hover{
+  color: #007af5;
+  border-color: #007af5;
+}
+.prences .select-garenal-2 .form-group .control-container .form-control option{
+  color: #000;
+  background-color: #FFF;
+}
+.text-right button.link-button{
+  border: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  max-width: 100%;
+  align-items: center;
+  color: #0070e0;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.general-set{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: 40px;
+  margin-left: 9px;
+}
+.toggle__status.toggle__status--off{
+  margin-left: 155px;
+  font-weight: 400;
+  color: #637282;
+}
+.text-right-2 .toggle label.switch{
+  right: -186px;
+  top: -22px;
+}
+.text-right-2 .toggle .switch span.slider{
+  border-radius: 4px;
+}
+/*end list*/
+.row .text-semibold a{
+  color: #1B2733;
+}
+.datalist .tabs .nav .nav-link.active{
+  color: #1B2733;
+  background-color: #fff;
+  font-weight: 600;
+  padding-bottom: 32px;
+  margin-bottom: 0;
+  padding-right: 0px;
+  border-bottom: 1px solid #000;
+  margin-right: 30px;
+}
+.datalist-container .rows{
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.datalist .tabs{
+  margin-left: 10px;
+}
+.flex-menu .filter-right{
+  width: 24%;
+  margin-top: -55px;
+}
+.tabs .nav-item label.text-small{
+  margin-left: 5px;
+}
+
+.nav-item label.text-small{
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.nav-item button.btn-default{
+  margin-left: 10px;
+  margin-top: -6px;
+}
+.ml-auto .keyword-box input.keyword-input{
+  font-size: 14px;
+  border-radius: .25rem;
+  font-weight: 500;
+}
+.text-left .btn-secondary-1{
+  background-color: #737373;
+  border-color: #737373;
+}
+.text-left .btn-secondary-1 a{
+  color: #FFF;
+}
+.row .ben_trai{
+  top: 50px;
+}
+.dataselect .btn-group button.btn-default{
+  margin-top: -5px;
+  margin-left: 2px;
+  font-size: 14px;
+}
+.filter-right span.keyword-box{
+  margin-top: -7px;
+}
+.nav-tabs a{
+  color: #637282;
+}
+.nav-tabs .nav-item .actions-box button.btn-default{
+  margin-top: -3px;
+}
+.datalist ul > li:first-child {
+  border-top: none;
+}
+.nav-tabs a.nav-item.nav-link{
+  height: 13px;
+  border: none;
+  margin-top: -5px;
+  margin-bottom: 21px;
+  padding-left: 0;
+  padding-right: 30px;
+}
+.row .text-right .text-right{
+  margin-right: 30px;
+  width: 142px;
+  margin-top: -7px;
+}
+.row .text-right .text-right i{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: blue;
+}
+.row .menu-left{
+  background: #F7F9FA;
+}
+.row .list-left .row{
+  margin-left: -7px;
+}
+/*begin list*/
+.general{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: 40px;
+  margin-left: 9px;
+  margin-bottom: -25px;
+  
+}
+.general-page{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: -2px;
+  margin-left: 9px;
+  padding-left: 10px;
+  margin-bottom: -26px;
+}
+.prences .select-garenal-1{
+  width: 21%;
+  float: right;
+  position: relative;
+  margin-top: -21px;
+  right: -30px;
+}
+.prences .select-garenal-1 .form-group .control-container select.form-control{
+  border-radius: 4px;
+  color: #3d464d;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: inherit;
+  padding-left: 12px;
+}
+.prences .select-garenal-1 .form-group .control-container select.form-control:hover{
+  color: #007af5;
+  border-color: #007af5;
+}
+.prences .select-garenal-1 .form-group .control-container .form-control option{
+  color: #000;
+  background-color: #FFF;
+}
+.prences .select-garenal-2{
+  width: 21%;
+  float: right;
+  margin-top: -21px;
+  margin-right: -457px;
+}
+.prences .select-garenal-2 .form-group .control-container select.form-control{
+  border-radius: 4px;
+  color: #3d464d;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: inherit;
+  text-overflow: ellipsis;
+  padding-left: 9px;
+}
+.prences .select-garenal-2 .form-group .control-container select.form-control:hover{
+  color: #007af5;
+  border-color: #007af5;
+}
+.prences .select-garenal-2 .form-group .control-container .form-control option{
+  color: #000;
+  background-color: #FFF;
+}
+.text-right button.link-button{
+  border: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  max-width: 100%;
+  align-items: center;
+  color: #0070e0;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.general-set{
+  font-size: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-top: -2px;
+  margin-left: 9px;
+  margin-bottom: -26px;
+}
+.toggle__status.toggle__status--off{
+  margin-left: 146px;
+  font-weight: 400;
+  color: #637282;
+}
+.text-right-2 .toggle label.switch{
+  right: -174px;
+  top: -22px;
+}
+.text-right-2 .toggle .switch span.slider{
+  border-radius: 4px;
+}
+.text-right h4.datetime {
+  position: relative;
+  right: 30px;
+  top: 9px;
+}
+.text-right a.edit {
+  position: relative;
+  top: -17px;
+  color: #0070e0;
+}
+/*end list*/
+.row .text-semibold a{
+  color: #1B2733;
+}
+.datalist .tabs .nav .nav-link.active{
+  color: #1B2733;
+  background-color: #fff;
+  font-weight: 600;
+  padding-bottom: 32px;
+  margin-bottom: 0;
+  padding-right: 0px;
+  border-bottom: 1px solid #000;
+  margin-right: 30px;
+}
+.datalist-container .rows{
+  margin-top: 27px;
+  margin-left: 10px;
+}
+.datalist .tabs{
+  margin-left: 10px;
+}
+.flex-menu .filter-right{
+  width: 24%;
+  margin-top: -55px;
+}
+.tabs .nav-item label.text-small{
+  margin-left: 5px;
+}
+
+
+/*code lam lai option2*/
+.tab-content .tab-pane .datalist-container {
+  margin-top: -40px;
+}
+.container .sidebar .sub-section {
+  margin-top: 129px;
+}
+.container .content {
+  margin-left: 92px;
+}
+.container .sidebar .sub-section ul {
+  margin-left: 24px;
+}
+.sub-section ul.menu li a {
+  font-size: 16px;
+}
+.filter-right {
+  float: left;
+  position: relative;
+  left: -275px;
+}
+.filter-right span.keyword-box {
+  padding-right: 38px;
+  margin-right: 35px;
+}
+.filter-right span.keyword-box input.keyword-input {
+  min-width: 195px!important;
+}
+.content .page-header h1.text-semibold {
+  font-size: 24px;
+  position: relative;
+  top: 20px;
+  left: 7px;
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+  color: #1B2733;
+  font-weight: inherit;
+}
+ul.rows li .row {
+  margin-top: 20px;
+}
+ul.rows li .row .list-left {
+  margin-top: -26px;
+}
+ul.rows li {
+  height: 113px;
+  margin-top: 0px;
+}
+.text-right span.text-edit {
+  margin-left: -56px;
+}
+.row .text-right-2 {
+  margin-top: 10px;
+}
+.sub-section ul.menu {
+  color: #888;
+}
+.text-right h4.text-semibold {
+  color: #222;
+  font-weight: 500;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 60px;
+}
+.sub-section ul.menu.one-line li a i {
+  padding-left: 10px;
+}
