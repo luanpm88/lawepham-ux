@@ -13,7 +13,10 @@ class UxServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Register TwigBridge\ServiceProvider
+        $this->app->register(\TwigBridge\ServiceProvider::class);
+        
+        // Register routes
         if (! $this->app->routesAreCached()) {
             require __DIR__.'/routes.php';
         }
