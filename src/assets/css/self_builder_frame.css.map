@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,sBAAuB;EACrB,MAAM,EAAE,0BAA0B;;AAEpC,qFAAkF;EAChF,MAAM,EAAE,eAAe",
+"sources": ["../sass/self_builder_frame.scss"],
+"names": [],
+"file": "self_builder_frame.css"
+}
