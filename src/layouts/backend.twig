@@ -52,7 +52,7 @@
                         Plan
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold font-size " href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size " href="{{ action('Admin\\PlanController@index') }}">
                           Plan
                         </a>
                         <a class="dropdown-item text-semibold font-size " href="{{ action('Admin\\CustomerController@index') }}">
@@ -84,7 +84,7 @@
                         Settings
                     </a>
                     <div class="dropdown-menu has-border dropdown-menu-left" aria-labelledby="dropdown01">
-                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
+                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\OptionController@index') }}">
                           All Settings
                         </a>
                         <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\TemplateController@index') }}">
@@ -92,9 +92,6 @@
                         </a>
                         <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\CustomerController@index') }}">
                           Languages
-                        </a>
-                        <a class="dropdown-item text-semibold font-size" href="{{ action('Admin\\BounceHandlerController@index') }}">
-                          Bounce Handlers
                         </a>
                     </div>
                 </li>
@@ -152,10 +149,10 @@
             </div>
         {% endif %}
 
-        <div class="content font-size">
+        <div class="content font-size ml-0">
             {% if block('page_header') %}
                 <div class="page-header font-size flex">
-                    <h1 class="text-semibold mr-auto ">{% block page_header %}{% endblock %}</h1>
+                    <h1 class="text-semibold mr-auto">{% block page_header %}{% endblock %}</h1>
                     {% block page_actions %}{% endblock %}
                 </div>
             {% endif %}
