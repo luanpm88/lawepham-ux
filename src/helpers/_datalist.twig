@@ -34,10 +34,11 @@
                             value: sort['value'],
                             options: sort['options']
                         } %}
-                        <input name="sort_direction" value="asc" type="hidden" />
-                        <button class="btn btn-default font-size ml-10 sort-direction-but"><i class="ion-chevron-up font-size"></i></button> 
+                        <input name="sort_direction" value="{{ sort['direction'] is defined and sort['direction']  == 'desc' ? 'desc' : 'asc' }}" type="hidden" />
+                        <button class="btn btn-default font-size ml-10 sort-direction-but">
+                            <i class="ion-chevron-{{ sort['direction'] is defined and sort['direction'] == 'desc' ? 'down' : 'up' }} font-size"></i>
+                        </button>
                     {% endif %}
-                    
                     <!--begin filter group-->
                     {% if filters %}
                         {% for filter in filters %}
