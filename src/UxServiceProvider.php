@@ -21,10 +21,10 @@ class UxServiceProvider extends ServiceProvider
             require __DIR__.'/routes.php';
         }
         
-        // Assets
-        $this->publishes([
-            __DIR__.'/assets' => public_path('ux/assets'),
-        ], 'public');
+        //// Assets
+        //$this->publishes([
+        //    __DIR__.'/assets' => public_path('ux/assets'),
+        //], 'public');
     }
 
     /**
