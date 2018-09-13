@@ -1,7 +1,7 @@
 <div class="btn-group">
      <label class="custom-control custom-checkbox">
-        <input type="hidden" class="custom-control-input" name="{{ name }}" value="{{ option['0'] }}">
-        <input type="checkbox" class="custom-control-input" checked name="{{ name }}" value="{{ option['1'] }}">
+        <input type="hidden" class="custom-control-input" name="{{ name }}" value="{{ option['uncheck'] }}">
+        <input type="checkbox" class="custom-control-input" {% if option['check'] == value %}checked="checked" {% endif %} name="{{ name }}" value="{{ option['check'] }}">
         <span class="custom-control-indicator"></span>
     </label>
 </div>    
