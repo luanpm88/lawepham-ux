@@ -33,6 +33,13 @@ class TwigUx extends Twig_Extension
      */
     public function getFunctions()
     {
-        return [];
+        return [
+            new \Twig_SimpleFunction('instantOf', array($this, 'instantOf')),
+        ];
+    }
+    
+    public function instantOf($class)
+    {
+        return new $class();
     }
 }

@@ -8,14 +8,16 @@
                             id: checkbox['id']
                         } %}
                     {% endif %}
-                    {% if image['url'] is not null %}
-                        {% include 'helper::_datalist_image.twig' with {
-                            image: image['url']
-                        } %}
-                    {% else  %}
-                        <span class="custom-control custom-checkbox pull-left mb-20 image_list">
-                            <span class="lnr lnr-user icon-contact-error mt-2"></span>
-                        </span>
+                    {% if image['url'] is defined %}
+                        {% if image['url'] is not null %}
+                            {% include 'helper::_datalist_image.twig' with {
+                                image: image['url']
+                            } %}
+                        {% else  %}
+                            <span class="custom-control custom-checkbox pull-left mb-20 image_list">
+                                <span class="lnr lnr-user icon-contact-error mt-2"></span>
+                            </span>
+                        {% endif %}
                     {% endif %}
                     <h4 class="text-semibold">
                         <a href="{{ main_col['url'] }}">{{ main_col['text'] }}</a>
