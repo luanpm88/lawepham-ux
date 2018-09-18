@@ -1,20 +1,15 @@
 <div class="input-group image-upload">
     <div class="row">
-        <div class="col-md-4">
-            <div class="anh-contact">
-                <span class="lnr lnr-user icon-contact"></span>
-                <img src="/images/contacts/thumbs/{{contact.image }}" alt="" id="img_url" class=""/>
-               
-            </div>
+        <div class="col-sm-2 hinh_left">
+            <span class="lnr lnr-user"></span>
+            <img src="/images/products/thumbs/{{ product.image }}" alt="" class="anh" style="" id="img_url">
         </div>
-        <div class="col-md-8">
-             <div class="hinh_right">
-                <p class="noidung">Photo should be as 300px x 300px</p>
-                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-                <input type="file"  name="image" class="inp-anh" style="display: none;" id="img_url" onChange="img_pathUrl(this)">
-                <span class="btn btn-outline-secondary btn-anh"><i class="lnr lnr-upload"></i>{{ trans('messages.contact.upload') }}</span>
-                <span class="btn btn-outline-secondary btn-remove"><i class="lnr lnr-trash"></i>{{ trans('messages.contact.remove') }}</span>
-            </div>
+        <div class="col-sm-10 hinh_right">
+            <p class="noidung1">Photo should be at 300px x 300px </p>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="file" name="uploadfile" class="Chon" style="display: none;" id="img_file" onChange="img_pathUrl(this);">
+            <span class="btn btn-outline-secondary btn-upload nutchon"><i class="lnr lnr-upload"></i> {{ 'Upload' }}</span>
+            <button class="btn btn-outline-secondary btn-remove"><i class="lnr lnr-trash"></i> {{ 'Remove' }}</button>
         </div>
-    </div>
-</div>
+    </div>    
+</div><!-- /input-group image-upload [TO HERE]-->

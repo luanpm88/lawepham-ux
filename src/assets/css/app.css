@@ -2262,4 +2262,63 @@ input:checked + .slider:before {
   width: 120px;
 }
 
+.custom-control img {
+  border-radius: 50%;
+  height: 50px;
+  margin-top: 8px; }
+
+.filter-left {
+  display: inline-flex;
+  margin-left: -16px; }
+  .filter-left label.text-small {
+    width: 100%;
+    margin-top: 10px; }
+  .filter-left select.form-control {
+    margin-left: 10px;
+    width: 100px; }
+
+.rows .row {
+  margin-bottom: -8px; }
+
+.control-container .row {
+  margin-top: 30px; }
+  .control-container .row .hinh_left {
+    border: 1px solid #ccc;
+    height: 85px;
+    width: 245px;
+    border-radius: 50%;
+    position: relative;
+    left: 16px;
+    padding: 0;
+    margin: 0; }
+    .control-container .row .hinh_left span.lnr-user {
+      font-size: 41px;
+      margin-top: 21px;
+      margin-left: 22px; }
+    .control-container .row .hinh_left img.anh {
+      border-radius: 50%;
+      height: 85px;
+      width: 85px;
+      margin-top: -72px; }
+  .control-container .row .hinh_right {
+    position: relative;
+    right: -30px; }
+
+.text-left {
+  margin-left: 14px; }
+
+span.glyphicon {
+  font-size: 14px; }
+
+.label span.custom-control {
+  margin-top: -11px; }
+  .label span.custom-control span.lnr {
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 13px;
+    font-size: 24px;
+    padding-top: 13px; }
+
 /*# sourceMappingURL=app.css.map */
