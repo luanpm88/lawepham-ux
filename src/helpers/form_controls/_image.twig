@@ -5,7 +5,7 @@
             <img src="/images/products/thumbs/{{ product.image }}" alt="" class="anh" style="" id="img_url">
         </div>
         <div class="col-sm-10 hinh_right">
-            <p class="noidung1">Photo should be at 300px x 300px </p>
+            <p class="noidung1"> Photo should be at 300px x 300px </p>
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="file" name="uploadfile" class="Chon" style="display: none;" id="img_file" onChange="img_pathUrl(this);">
             <span class="btn btn-outline-secondary btn-upload nutchon"><i class="lnr lnr-upload"></i> {{ 'Upload' }}</span>
