@@ -1898,6 +1898,7 @@ input:checked + .slider:before {
   border-radius: 50%;
   height: 50px;
   margin-top: 8px;
+  width: 50px;
 }
 .filter-left {
   display: inline-flex;
@@ -1964,5 +1965,17 @@ span.glyphicon {
     padding-top: 13px;
   }
 }
+.sidebar ul.menu.sidebar-menu {
+  margin-left: -34px;
+  
+  .bottom-menu {
+    position: relative;
+    top: 176px;
+    width: 67%;
+    left: 58px;
+  }
+}
+
+
 
 
