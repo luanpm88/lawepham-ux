@@ -2,7 +2,7 @@
     <span class="filter-item ml-lvl2">
         {% for action in actions %}
             {% if action['can'] is not defined or action['can'] == true %}
-                <a href="{{ action['url'] }}" class="btn btn-secondary btn-icon-left">
+                <a href="{{ action['url'] }}" class="btn btn-secondary btn-icon-left modal-control">
                     {{ action['text']|raw }}
                 </a>
             {% endif %}
