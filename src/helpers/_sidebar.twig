@@ -1,21 +1,25 @@
 <div class="sub-section">
     <ul class="menu one-line sidebar-menu">
-        <li>
-            {% for item in items %}
-                <div class="col-data pull-left">
-                    <a href="{{ item['url'] }}" {% if item['name'] == current_item %} class="current" {% endif %}><i class="{{ item['icon'] }}"></i>
-                        {{ item['label'] }}
-                    </a>
-                </div>
-                
-                <!--Thêm gạch ngang menu-->
-                {% if item['name'] == '_divider_' %}
-                    <div class="bottom-menu">
-                        <hr>
-                    </div>
-                {% endif %}
-            {% endfor %}
+        {% for item in items %}<li>
+            {% if item['name'] == '_divider_' %}
+                <hr>
+            {% else %}
+                <a href="{{ item['url'] }}"
+                    class="
+                        {% if item['name'] == current_item %}current {% endif %}
+                        {% if item['class'] is defined %}{{ item['class'] }}{% endif %}
+                    "
+                >
+                    <i class="{{ item['icon'] }}"></i>
+                    {{ item['label'] }}
+                    
+                    {% if item['badge'] is defined and item['badge'] > 0 %}
+                        <span class="badge badge-pill badge-{% if item['name'] == current_item %}primary{% else %}secondary{% endif %}">{{ item['badge'] }}</span>
+                    {% endif %}
+                </a>
+            {% endif %}
         </li>
+        {% endfor %}
     </ul>
 </div>
 
