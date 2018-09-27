@@ -1931,13 +1931,17 @@ input:checked + .slider:before {
       font-size: 41px;
       margin-top: 21px;
       margin-left: 22px;
+      position: absolute;
+      z-index: 999;
     }
     
     img.anh {
       border-radius: 50%;
       height: 85px;
       width: 85px;
-      margin-top: -72px;
+      margin-top: 0px;
+      position: relative;
+      z-index: 1000;
     }
   }
   
@@ -1965,6 +1969,144 @@ span.glyphicon {
     padding-top: 13px;
   }
 }
+.row .right {
+  margin-top: 165px;
+}
+ul.menu li a.sidebar-add-button {
+  color: #0066aa;
+  font-weight: 600;
+    
+  i {
+    color: #0066aa;
+    font-weight: 600;
+  }
+}
+.general-page-header {
+  align-items: center;
+  padding: 8px;
+  font-weight: 500;
+  background-color: #F7F9FA;
+  color: #637282;
+  margin-bottom: -8px;
+}
+ul.rows {
+  padding-left: 4px;
+  padding-top: 10px;
+   
+  li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 18px 0 4px 0;
+    
+    .text-right {
+      margin-top: -23px;
+    }
+  }
+}
+thead.thead-light {
+  background: #cccccc1f;
+}
+
+//code list option
+a.editable.editable-click {
+  text-decoration: none;
+  border-bottom: dashed 1px #0088cc;
+}
+span.editable-container.editable-inline {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  zoom: 1;
+}
+.editable-inline .editableform-loading {
+  background-position: left 5px;
+}
+.editableform {
+  margin-bottom: 0;
+}
+.editableform .control-group {
+  margin-bottom: 0;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.editable-error-block {
+  max-width: 300px;
+  margin: 5px 0 0 0;
+  width: auto;
+  white-space: normal;
+}
+.help-block {
+  color: #737373;
+}
+.editable-input {
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
+  white-space: normal;
+  zoom: 1;
+}
+.editableform .form-control {
+  width: auto;
+}
+.editable-input input.form-control.input-sm {
+  padding-right: 0px;
+  font-weight: 500;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.editable-clear-x {
+  background: url(../img/clear.png) center center no-repeat;
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  opacity: 0.6;
+  z-index: 100;
+  top: 50%;
+  right: 6px;
+  margin-top: -6px;
+}
+.editable-buttons {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 7px;
+  zoom: 1;
+  margin-left: 1px;
+}
+.editable-buttons {
+  
+  .editable-cancel {
+    margin-left: 7px;
+    width: 7px;
+  }
+  
+  .editable-submit {
+    margin-left: 7px;
+    width: 7px;
+  }
+}
+.lnr {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: -7px;
+}
+.editable-buttons .btn i.lnr.lnr-cross {
+  font-size: 14px;
+}
+.editable-buttons .btn i.lnr.lnr-chevron-down {
+  font-size: 14px;
+}
+
+
+
 
 
 
