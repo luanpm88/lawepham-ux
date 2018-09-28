@@ -1926,7 +1926,7 @@ ul.menu li a.sidebar-add-button {
   margin-bottom: -8px; }
 
 ul.rows {
-  padding-left: 4px;
+  padding-left: 8px;
   padding-top: 10px; }
   ul.rows li {
     border-bottom: 1px solid #e0e0e0;
@@ -1945,7 +1945,8 @@ span.editable-container.editable-inline {
   display: inline-block;
   vertical-align: middle;
   width: auto;
-  zoom: 1; }
+  zoom: 1;
+  margin-top: 10px; }
 
 .editable-inline .editableform-loading {
   background-position: left 5px; }
