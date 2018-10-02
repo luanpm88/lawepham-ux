@@ -110,6 +110,13 @@ button.nutan {
 .loader-outer {
   text-align: center; }
 
+span.empty {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c9ab7;
+  font-size: 18px; }
+
 .sk-fading-circle {
   margin: 100px auto;
   width: 40px;

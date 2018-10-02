@@ -208,6 +208,9 @@ label {
 .datalist ul>li:first-child {
     border-top: 1px solid #e0e0e0;
 }
+.datalist ul>li {
+    border-top: 1px solid #e0e0e0;
+}
 .datalist ul>li:last-child {
     border-bottom: 0;
 }
@@ -281,6 +284,9 @@ code {
 .datalist-filter label {
     margin-bottom: 0;
     vertical-align: middle;
+}
+.datalist .datalist-container ul li label.custom-checkbox {
+  margin-top: 10px!important;
 }
 .dataselect {
     display: inline-block;

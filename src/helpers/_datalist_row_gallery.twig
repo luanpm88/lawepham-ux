@@ -1,12 +1,18 @@
 <li>
-    <a href="" class="fnl-gallery-thumb-link">
+    
+    <a href="{{ url }}" class="fnl-gallery-thumb-link">
         <img
             class="fnl-gallery-thumb-img"
             src="{{ thumb }}"
         />
     </a>
+    {% if checkbox %}
+        {% include 'helper::_datalist_row_checkbox.twig' with {
+            id: checkbox['id']
+        } %}
+    {% endif %}
     <div class="fnl-gallery-header">
-        <a href="">
+        <a href="{{ url }}">
             {{ title }}
         </a>
         <p class="text-dim">{{ desc }}</p>

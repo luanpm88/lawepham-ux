@@ -1,5 +1,41 @@
 $(function() {
-    $('.modal-control').click(function(e){
+    //$('.modal-control').click(function(e){
+    //    e.preventDefault();
+    //    $('.modal-content').addClass('hienra');
+    //    $('.wraper-frontend').addClass('display');
+    //    console.log('ban vua click do');
+    //    
+    //    var url = $(this).attr('href');
+    //    var method = $(this).attr('data-method');
+    //    //var slogan = 'Desktop Font: An installable TTF font with ligatures.You can easily insert the icons in any desktop.';
+    //    var load = htmlLoader();
+    //    var html = '<div class="modal fade" role="dialog" id="myModal">'+
+    //                    '<div class="modal-dialog modal-select">'+
+    //                        '<div class="modal-content">'+
+    //                            '<p>'+load+'</p>'+    
+    //                        '</div>'+
+    //                    '</div>'+
+    //                '</div>';
+    //
+    //    $('body').append(html);
+    //    var modal = $('#myModal');                
+    //        modal.modal('show');
+    //    
+    //    $.ajax({
+    //            url: url,
+    //            type: method,
+    //            dataType: 'html',
+    //        }).always(function(response) {
+    //            $('#myModal .modal-content').html(response);
+    //        });
+    //    return false;
+    //});
+    //
+    //$('.icon-rm').click(function(){
+    //    $('.modal').addClass('andi');
+    //});
+    
+    $(document).on('click', '.modal-control', function(e) {
         e.preventDefault();
         $('.modal-content').addClass('hienra');
         $('.wraper-frontend').addClass('display');
@@ -7,7 +43,6 @@ $(function() {
         
         var url = $(this).attr('href');
         var method = $(this).attr('data-method');
-        //var slogan = 'Desktop Font: An installable TTF font with ligatures.You can easily insert the icons in any desktop.';
         var load = htmlLoader();
         var html = '<div class="modal fade" role="dialog" id="myModal">'+
                         '<div class="modal-dialog modal-select">'+
@@ -16,7 +51,7 @@ $(function() {
                             '</div>'+
                         '</div>'+
                     '</div>';
-
+        
         $('body').append(html);
         var modal = $('#myModal');                
             modal.modal('show');
@@ -34,6 +69,8 @@ $(function() {
     $('.icon-rm').click(function(){
         $('.modal').addClass('andi');
     });
+    
+    
     
 });
 

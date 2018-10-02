@@ -1,0 +1,14 @@
+<div class="form-group">
+    {% if label %} <label for="exampleInputEmail1 " class="font-size">{{ label }}</label>{% endif %}
+    <div class="control-container">
+        {% for option in options %}
+        <label class="custom-control custom-checkbox">
+            <input type="hidden" class="custom-control-input" name="{{ name }}" value="{{ option['uncheck'] }}">
+            <input type="checkbox" class="custom-control-input" {% if option['check'] == value %}checked="checked" {% endif %} name="{{ name }}" value="{{ option['check'] }}">
+            <span class="custom-control-indicator"></span>
+        </label>
+        
+        <span class="font-size">{{ option.name }}</span>
+        {% endfor %}
+    </div>
+</div>    

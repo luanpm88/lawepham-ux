@@ -1,6 +1,3 @@
-
-{"version":3,"sourceRoot":"","sources":["../sass/self_builder_frame.scss"],"names":[],"mappings":"AAAA;EACE;;;AAEF;EACE","file":"self_builder_frame.css"}
-=======
 {
 "version": 3,
 "mappings": "AAAA,sBAAuB;EACrB,MAAM,EAAE,0BAA0B;;AAEpC,qFAAkF;EAChF,MAAM,EAAE,eAAe",
